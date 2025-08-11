@@ -8,7 +8,7 @@ public class Test_LoginCheck {
 
 
         // 대소문자 구분 없이 비교
-        if (inputId.equalsIgnoreCase(savedId)) {
+        if (inputId.equalsIgnoreCase(savedId))  {
             System.out.println("로그인 성공!");
         } else {
             System.out.println("아이디가 일치하지 않습니다.");
