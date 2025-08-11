@@ -1,13 +1,11 @@
-import java.util.Scanner;
+//아이디 대소문자 구분하지 않고 일치시 같은 아이디로 인식
 
 public class Test_LoginCheck {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        // 기준아이디
-        String savedId = "Admin";
+        // 아이디값 두개 비교
+        String inputId = "Admin";
+        String savedId = "admin";
 
-        System.out.print("아이디를 입력하세요: ");
-        String inputId = sc.nextLine();
 
         // 대소문자 구분 없이 비교
         if (inputId.equalsIgnoreCase(savedId)) {
@@ -16,7 +14,6 @@ public class Test_LoginCheck {
             System.out.println("아이디가 일치하지 않습니다.");
         }
 
-        sc.close();
     }
 }
 
